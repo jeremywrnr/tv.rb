@@ -1,4 +1,4 @@
-```
+```ruby
  __                      __
 /\ \__                  /\ \
 \ \ ,_\  __  __     _ __\ \ \____
@@ -36,5 +36,9 @@ for more waves:
 
     $ tv.rb --wavy
 
-Then, press ctrl-c to quit.
+then, press ctrl-c to quit.
+
+available patterns: `bw xmas error rasta pride`
+
+dynamically resizes to your terminal width while running!
 
