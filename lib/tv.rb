@@ -10,23 +10,32 @@ end
 
 # TVTVTV
 class TV
-  def initialize(arg)
+  def initialize(args)
     setup_colors
     resize
+    parse args
+  end
+
+  private
+  def parse(args)
+    arg = args.shift
     case arg
     when "-v"
       puts Version
+    when "--wave"
+      @wave = true
     when "--test"
       testing
     when nil
       helper
     else
-      set_bg arg
+      set_bg args
       endless
     end
+
+    parse args unless args.empty?
   end
 
-  private
   def setup_colors
     blk = 40
     red = 41
@@ -41,9 +50,10 @@ class TV
 
     # backgrounds
     @patts = {}
-    @patts['error'] = [gry, gry, yel, cyn, grn, pnk, red, blu]
+    @patts['error'] = [wht, gry, yel, cyn, grn, pnk, red, blu, blk]
     @patts['rasta'] = [blk, grn, grn, yel, yel, red, red, blk, blk]
     @patts['pride'] = [blk, ppl, blu, cyn, grn, yel, pnk, red, blk]
+    @patts['cloud'] = [blk, wht, blk, blk, wht, blk, wht, wht, blk]
 
     # pride for testing!
     @patt = @patts['pride']

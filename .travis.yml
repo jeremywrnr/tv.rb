@@ -1,9 +1,12 @@
 language: ruby
-rvm: 2.2.3
+rvm: 2.2.4
 
 install:
-  - gem install terminfo
-  - make # build ruby gem locally
+  - bundle install
+  - make # tv locally
 
-script: tv.rb --test
+script:
+  - tv.rb --test
+  - tv.rb --test --wavy
+  - tv.rb --test --wavy cloud
 
