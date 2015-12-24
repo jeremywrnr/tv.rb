@@ -11,8 +11,7 @@ Gem::Specification.new do |g|
   g.license     = "MIT"
   g.executables = ["tv.rb"]
   g.files       = ["lib/tv.rb"]
-  g.add_runtime_dependency     "ruby-terminfo", "~> 0.1", ">= 0.1.1"
-  g.add_development_dependency "rspec",         "~> 3.3", ">= 3.3.0"
+  g.add_runtime_dependency "ruby-terminfo", "~> 0.1", ">= 0.1.1"
   g.post_install_message = "Turn on the tv with `tv.rb`"
 end
 

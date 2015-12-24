@@ -10,6 +10,5 @@ require_relative '../lib/tv'
 # by jeremy warner, december 2015
 
 
-# go run or test
-TV.new(ARGV.first)
+TV.new(ARGV)
 
