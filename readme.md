@@ -7,13 +7,12 @@
    \ \__\\ \___//\_\\ \_\  \ \_,__/
     \/__/ \/__/ \/_/ \/_/   \/___/
 ```
-=====
 
-![](tv.jpg?raw=true)
 
 [![Gem Version](https://badge.fury.io/rb/tv.rb.svg)](https://badge.fury.io/rb/tv.rb)
 [![Build Status](https://travis-ci.org/jeremywrnr/tv.rb.svg?branch=master)](https://travis-ci.org/jeremywrnr/tv.rb)
 [![MIT](https://img.shields.io/npm/l/alt.svg?style=flat)](http://jeremywrnr.com/mit-license)
+![](tv.jpg?raw=true)
 
 
 `tv.rb` (maybe) emulates a retro tv's fuzzy flashing.

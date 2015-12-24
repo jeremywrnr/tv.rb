@@ -3,10 +3,7 @@ rvm: 2.2.4
 
 install:
   - bundle install
-  - make # tv locally
+  - make # local tv
 
-script:
-  - tv.rb --test
-  - tv.rb --test --wavy
-  - tv.rb --test --wavy cloud
+script: ruby spec/tv_spec.rb
 
