@@ -10,6 +10,7 @@ end
 
 # TVTVTV
 class TV
+  @Version = 0.1
   def initialize(args)
     setup_colors
     opts args
@@ -22,7 +23,7 @@ class TV
     args.select { |arg| arg.chr == "-" }.map do |arg|
       case arg
       when "-v", "--version"
-        puts Version
+        puts @Version
         exit 0
       when "--wavy"
         @wavy = true
@@ -140,4 +141,3 @@ class TV
   end
 end
 
-    $stdout.flush

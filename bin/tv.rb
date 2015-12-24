@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 
-Version = 0.1
 require_relative '../lib/tv'
 
 
