@@ -12,5 +12,5 @@ push: build
 	gem push $(g)-$(v).gem
 
 dev:
-	filewatcher '**/*.rb' 'clear && ruby bin/tv.rb --test'
+	filewatcher "**/*.rb" "clear && ruby spec/tv_spec.rb"
 
