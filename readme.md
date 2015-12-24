@@ -1,9 +1,9 @@
 tv.rb
 =====
 
+![](tv.jpg?raw=true)
 
-[![Gem
-Version](https://badge.fury.io/rb/tv.rb.svg)](https://badge.fury.io/rb/tv.rb)
+[![Gem Version](https://badge.fury.io/rb/tv.rb.svg)](https://badge.fury.io/rb/tv.rb)
 [![Build Status](https://travis-ci.org/jeremywrnr/tv.rb.svg?branch=master)](https://travis-ci.org/jeremywrnr/tv.rb)
 [![MIT](https://img.shields.io/npm/l/alt.svg?style=flat)](http://jeremywrnr.com/mit-license)
 
@@ -23,6 +23,10 @@ by jeremy warner, december 2015
 ## usage
 
     $ tv.rb
+
+for more waves:
+
+    $ tv.rb --wavy
 
 Then, press ctrl-c to quit.
 
