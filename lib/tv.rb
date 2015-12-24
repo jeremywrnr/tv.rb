@@ -68,7 +68,7 @@ class TV
   def resize
     @width = current_width
     @colorwidth = (@width.to_f / @colors).floor
-    @offset = offset
+    @offset = @wavy ? [-1, 0, 1, 1] : offset
   end
 
   def current_width
