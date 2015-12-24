@@ -2,7 +2,6 @@
 
 
 Version = 0.1
-require 'terminfo'
 require_relative '../lib/tv'
 
 

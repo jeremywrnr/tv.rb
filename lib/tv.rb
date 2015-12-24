@@ -1,3 +1,5 @@
+require 'terminfo'
+
 # add colors
 class String
   def colorize(bg)
@@ -39,17 +41,17 @@ class TV
 
     # backgrounds
     @patts = {}
-    @patts['rasta'] = [blk, grn, yel, red]
-    @patts['error'] = [gry, yel, cyn, grn, pnk, red, blu]
+    @patts['error'] = [gry, gry, yel, cyn, grn, pnk, red, blu]
+    @patts['rasta'] = [blk, grn, grn, yel, yel, red, red, blk, blk]
     @patts['pride'] = [blk, ppl, blu, cyn, grn, yel, pnk, red, blk]
 
-    # defaults
+    # pride for testing!
     @patt = @patts['pride']
     @colors = @patt.length
   end
 
   def helper
-    puts "enter a pattern: " << @patts.keys.join(", ")
+    print "Select a pattern (" << @patts.keys.join(", ") << "): "
     initialize gets.chomp
   end
 
@@ -105,6 +107,7 @@ class TV
   def set_bg(color)
     if @patts.keys.include? color
       @patt = @patts[color]
+
     else
       helper
     end
