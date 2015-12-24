@@ -1,0 +1,9 @@
+language: ruby
+rvm: 2.2.3
+
+install:
+  - gem install terminfo
+  - make # build ruby gem locally
+
+script: tv.rb --test
+
