@@ -1,4 +1,4 @@
-require_relative "../bin/tv"
+require_relative "../lib/tv"
 
 # just run tv.rb with a bunch of different options and see if it dies.
 # this is a pretty bad test suite, but it'll work for now.

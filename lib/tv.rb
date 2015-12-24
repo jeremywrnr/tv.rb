@@ -23,8 +23,7 @@ class TV
     args.select { |arg| arg.chr == "-" }.map do |arg|
       case arg
       when "-v", "--version"
-        puts @Version
-        exit 0
+        @vers = true
       when "--wavy"
         @wavy = true
       when "--test"
@@ -37,7 +36,11 @@ class TV
     args = args.select { |arg| arg.chr != "-" }
 
     if @test
+      set_bg args.first unless args.empty?
       testing
+
+    elsif @vers
+      puts @Version
 
     else
       set_bg args.first
@@ -111,17 +114,17 @@ class TV
     sleep 0.01 # still tunable...
   end
 
-  def helper
-    print "Select a pattern (" << @patts.keys.join(", ") << "): "
-    parse [] << $stdin.gets.chomp
-  end
-
   def set_bg(color)
     if @patts.keys.include? color
       @patt = @patts[color]
     else
       helper
     end
+  end
+
+  def helper
+    print "Select a pattern (" << @patts.keys.join(", ") << "): "
+    parse [] << $stdin.gets.chomp
   end
 
   def testing
