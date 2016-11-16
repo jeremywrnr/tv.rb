@@ -1,7 +1,7 @@
 Gem::Specification.new do |g|
   g.name        = "tv.rb"
-  g.version     = "0.1"
-  g.date        = "2015-12-23"
+  g.version     = "0.2"
+  g.date        = "2016-11-15"
   g.summary     = "CLI emulator of a retro tv's fuzzy flashing patterns."
   g.description = "tv.rb (maybe) CLI emulator of a retro tv's fuzzy flashing in
   the terminal.otherwise just some trippy terminal art that's fun."
@@ -14,4 +14,3 @@ Gem::Specification.new do |g|
   g.add_runtime_dependency "ruby-terminfo", "~> 0.1", ">= 0.1.1"
   g.post_install_message = "Turn on the tv with `tv.rb`"
 end
-

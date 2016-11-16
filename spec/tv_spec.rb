@@ -14,4 +14,3 @@ patts = %w{bw xmas error pride rasta}
 patts.each { |w| run w }
 
 patts.each { |w| run "--wavy " << w }
-

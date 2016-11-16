@@ -1,5 +1,5 @@
 g=tv.rb
-v=0.1
+v=0.2
 
 build: clean
 	gem build $(g).gemspec
