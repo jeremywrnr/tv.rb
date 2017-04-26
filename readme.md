@@ -1,6 +1,6 @@
 # :tv: tv.rb :gem:
 
-`tv.rb` (maybe) emulates a retro tv's fuzzy flashing.
+`tv.rb` (maybe) emulates a retro tv's [fuzzy flashing](https://www.youtube.com/watch?v=4YKpBYo61Cs).
 
 ![Screencast](http://i.imgur.com/i2ZUpYh.gif)
 
