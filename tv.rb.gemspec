@@ -18,8 +18,6 @@ Gem::Specification.new do |g|
   g.license     = "MIT"
 
   g.add_development_dependency "rake"
-  g.add_development_dependency "rspec"
-
   g.files       = ["lib/tv.rb"]
   g.executables = ["tv.rb"]
   g.require_path = "lib"
