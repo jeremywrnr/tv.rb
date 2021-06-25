@@ -1,5 +1,4 @@
 require_relative "lib/version"
-require "rspec/core/rake_task"
 require "rake"
 
 task :default => :spec
@@ -22,7 +21,3 @@ task :push => [:clean, :build] do
   system "gem push #{g}-#{v}.gem"
 end
 
-RSpec::Core::RakeTask.new(:spec) do |rake|
-  rake.verbose = true
-  rake.rspec_opts = "--color --format documentation"
-end
