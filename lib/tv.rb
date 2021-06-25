@@ -1,5 +1,3 @@
-require 'terminfo'
-
 # add colors
 class String
   def colorize(bg)
@@ -79,8 +77,11 @@ class TV
     @offset = @wavy? offset : [1]
   end
 
+
+  # get int number of columns in half of screen
   def current_width
-    TermInfo.screen_size[1]
+    guess = `tput cols`.to_i
+    guess == 0 ? 80 : guess
   end
 
   # makes offset sample avg = offset difference. for example, if we have a final
