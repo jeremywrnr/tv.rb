@@ -1,9 +1,9 @@
 language: ruby
-rvm: 2.2.4
+rvm: 3.0.1
 
 install:
   - bundle install
-  - make # local tv
+  - rake # local tv
 
 script: ruby spec/tv_spec.rb
 
