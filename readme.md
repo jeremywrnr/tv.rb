@@ -1,7 +1,7 @@
 # :tv: tv.rb :gem:
 
 [![Gem Version](https://badge.fury.io/rb/tv.rb.svg)](https://badge.fury.io/rb/tv.rb)
-[![Build Status](https://travis-ci.com/jeremywrnr/tv.rb.svg)](https://travis-ci.com/jeremywrnr/tv.rb)
+[![Build Status](https://app.travis-ci.com/jeremywrnr/tv.rb.svg)](https://app.travis-ci.com/jeremywrnr/tv.rb)
 [![MIT](https://img.shields.io/npm/l/alt.svg?style=flat)](http://jeremywrnr.com/mit-license)
 
 `tv.rb` (maybe) emulates a retro tv's [fuzzy flashing](https://www.youtube.com/watch?v=4YKpBYo61Cs).
